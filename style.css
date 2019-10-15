@@ -1,8 +1,97 @@
 body{
 	margin: 0;
 	padding: 0;
-	min-height: 100vh;
-	background: #333;
+	/*min-height: 100vh;
+	/*background: #333;*/	
+	background: rgb(132, 44, 35);
+	/*display: flex;*/
+	justify-content: center;
+	align-items: center;
+	font-family: consolas;
+}
+
+.th{
+	width: 100%;
+	margin-top: 20px;
+	padding: 10px 0px 10px 0; 
+	align-items: center;
+}
+
+.th h1{
+	text-align: center;
+	/*color: rgba(192, 57, 43,1.0);*/
+	color: white;
+	font-size: 60px;
+}
+
+.th h1 span{
+	text-align: center;
+	animation: animate 2s linear infinite;
+}
+
+.th h1 span:nth-child(1){
+	animation-delay: 0s;
+}
+
+.th h1 span:nth-child(2){
+	animation-delay: 0.25s;
+}
+
+.th h1 span:nth-child(3){
+	animation-delay: 0.5s;
+}
+
+.th h1 span:nth-child(4){
+	animation-delay: 0.75s;
+}
+
+.th h1 span:nth-child(5){
+	animation-delay: 1s;
+}
+
+.th h1 span:nth-child(6){
+	animation-delay: 1.25s;
+}
+
+.th h1 span:nth-child(7){
+	animation-delay: 1.5s;
+}
+
+.th h1 span:nth-child(8){
+	animation-delay: 1.75s;
+}
+
+.th h1 span:nth-child(9){
+	animation-delay: 2s;
+}
+
+.th h1 span:nth-child(10){
+	animation-delay: 2.25s;
+}
+
+@keyframes animate {
+	0%,100%{
+		color: #fff;
+		filter: blur(2px);
+		text-shadow: 0 0 10px #00b3ff,
+					 0 0 20px #00b3ff,
+					 0 0 40px #00b3ff,
+					 0 0 80px #00b3ff,
+					 0 0 120px #00b3ff,
+					 0 0 200px #00b3ff,
+					 0 0 300px #00b3ff;
+	}
+	5%,95%{
+		/*color: rgba(192, 57, 43,1.0);*/
+		color: white;
+		filter: blur(0px);
+		text-shadow: none;
+	}
+}
+
+.asd{
+	min-height: 70vh;
+	/*background: #333;*/
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -12,7 +101,7 @@ body{
 .container{
 	width: 1300px;
 	position: relative;
-	display: flex;
+	display: inline;
 	justify-content: space-between;
 }
 
@@ -28,8 +117,9 @@ body{
 
 .container .card .face.face1{
 	position: relative;
-	background: #333;
-	display: flex;
+	/*background: rgba(96,96,96,1);*/
+	background :rgba(241, 196, 15,1); 
+	display: inline-flex;
 	justify-content: center;
 	align-items: center;
 	z-index: 1;
@@ -38,11 +128,11 @@ body{
 
 .container .card:hover .face.face1{
 	background: #ff0057;
-	transform: translateY(0px);
+	/*transform: translateX(1000px);*/
 }
 
 .container .card .face.face1 .content{
-	opacity: 0.2;
+	opacity: 0.6;
 	transition: 0.5s;
 }
 
@@ -75,7 +165,7 @@ body{
 }
 
 .container .card:hover .face.face2{
-	transform: translateY(0);
+	transform: translate(300px, -100px);
 }
 
 .container .card .face.face2 .content p{
